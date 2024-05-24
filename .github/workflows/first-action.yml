@@ -4,8 +4,12 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Pring greeting
+      - name: Print greeting
         run: echo "Hello World"
-      - name: Pring goodbye
+      - name: Print multi-line
+        run: |
+          echo "First output"
+          echo "Second output"
+      - name: Print goodbye
         run: echo "Done - bye!"
     
